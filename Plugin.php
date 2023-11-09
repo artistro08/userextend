@@ -3,6 +3,7 @@
 use Backend;
 use Yaml;
 use File;
+use Event;
 use System\Classes\PluginBase;
 use RainLab\User\Controllers\Users as UsersController;
 use RainLab\User\Models\User as UserModel;
@@ -67,6 +68,17 @@ class Plugin extends PluginBase
     {
         $this->extendUserModel();
         $this->extendUsersController();
+        Event::listen('backend.menu.extendItems', function ($manager) {
+            $manager->addSideMenuItems('Responsiv.Support', 'support', [
+                'chat' => [
+                    'label' => 'Live Chat',
+                    'icon'  => 'icon-comments-o',
+                    'code'  => 'comments',
+                    'owner' => 'Responsiv.Support',
+                    'url'   => 'https://dashboard.tawk.to/login',
+                ],
+            ]);
+        });
     }
 
     /**
