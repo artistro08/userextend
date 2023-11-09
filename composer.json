@@ -1,0 +1,8 @@
+{
+    "name": "artistro08/userextend-plugin",
+    "type": "october-plugin",
+    "description": "Extend tailor to have relation fields with a user...",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

@@ -1,0 +1,15 @@
+# ===================================
+#  Extended Employee Field Definitions
+# ===================================
+
+position:
+  label: Position
+  tab: rainlab.userplus::lang.tab.profile
+  span: full
+  type: dropdown
+  options:
+    caregiver: Caregiver
+    dsp: DSP
+    lead_dsp: Lead DSP
+    supervisor: Supervisor
+    coordinator: Coordinator
