@@ -14,6 +14,7 @@ use RainLab\User\Models\User as UserModel;
  */
 class Plugin extends PluginBase
 {
+    public $require = ['Rainlab.User'];
 
     protected function extendUsersController()
     {
