@@ -75,7 +75,10 @@ class Plugin extends PluginBase
                     'icon'  => 'icon-comments-o',
                     'code'  => 'comments',
                     'owner' => 'Responsiv.Support',
-                    'url'   => 'https://dashboard.tawk.to/login',
+                    'url'   => '#',
+                    'attributes' => [
+                        'onclick' => 'javascript:window.open("https://dashboard.tawk.to/login", "_blank");',
+                    ]
                 ],
             ]);
         });
