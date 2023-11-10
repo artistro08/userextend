@@ -77,7 +77,7 @@ class Plugin extends PluginBase
                     'owner' => 'Responsiv.Support',
                     'url'   => '#',
                     'attributes' => [
-                        'onclick' => 'javascript:window.open("https://dashboard.tawk.to/login", "_blank");',
+                        'onclick' => 'javascript:window.open("https://dashboard.tawk.to", "_blank");',
                     ]
                 ],
             ]);
